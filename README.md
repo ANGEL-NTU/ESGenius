@@ -35,21 +35,43 @@ Example header from the reference file:
       This report visualizes the evaluation results for <b>50</b> models tested on <b>1136</b> questions from the <b>ESGenius_1136q</b> benchmark dataset.
   ```
 
-- **`figures/`** – images of word clouds and summary plots used in the paper.
+## Figures
+
+![main_results](figures/main_results.png)
+![acc_vs_model_size](figures/acc_vs_model_size.png)
+![ESGenius_QA_option_wordcloud](figures/ESGenius_QA_option_wordcloud.png)
+![ESGenius_Source_Text_wordcloud](figures/ESGenius_Source_Text_wordcloud.png)
+![ESGenius_QA_question_wordcloud](figures/ESGenius_QA_question_wordcloud.png)
+![num_questions_distribution_pie](figures/num_questions_distribution_pie.png)
+![pages_distribution_pie](figures/pages_distribution_pie.png)
 
 ## Running Evaluations
 
-1. Install dependencies (PyTorch, Transformers, pandas, etc.).
-2. Create a `.env` file with the required API tokens (`HF_TOKEN`, `DASHSCOPE_API_KEY`, etc.).
+1. Install dependencies:
+   ```bash
+   pip install torch transformers pandas numpy matplotlib seaborn python-dotenv
+   ```
+
+2. Create a `.env` file with the required API tokens:
+   ```
+   HF_TOKEN=your_huggingface_token
+   DASHSCOPE_API_KEY=your_dashscope_key
+   DEEPSEEK_API_KEY=your_deepseek_key
+   OPENAI_API_KEY=your_openai_key
+   ```
+
 3. Run one of the evaluation scripts:
+   ```bash
+   python eval_opensource.py        # evaluate local open‑source models
+   python eval_opensource_rag.py    # evaluate with RAG retrieval
+   python eval_qwen_api.py          # evaluate Qwen via Dashscope API
+   ```
 
-```bash
-python eval_opensource.py        # evaluate local open‑source models
-python eval_opensource_rag.py    # evaluate with RAG retrieval
-python eval_qwen_api.py          # evaluate Qwen via Dashscope API
-```
-
-Results are written to the `results/` directory as Excel workbooks containing a summary sheet and detailed predictions.
+Results are written to the `results/` directory as Excel workbooks containing:
+- Summary sheet with overall performance metrics
+- Detailed predictions for each model
+- Per-question analysis
+- Framework-specific performance breakdowns
 
 ## License
 

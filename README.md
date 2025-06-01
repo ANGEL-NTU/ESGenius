@@ -40,7 +40,6 @@ Example header from the reference file:
 
 - **`figures/`** – images of word clouds and summary plots used in the paper.
 
-## Figures
 
 The following figures summarise the dataset and evaluation results:
 

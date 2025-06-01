@@ -11,7 +11,6 @@ Example header from the reference file:
 ```csv
 "query_id","new_id","query","answer","A","B","C","D","Z","ref_page","ref_doc","source_text"
 ```
-【F:data/ESGenius_w_ref_1136q.csv†L1-L1】
 
 ## Repository Layout
 
@@ -24,7 +23,6 @@ Example header from the reference file:
   DASHSCOPE_API_KEY = os.getenv("DASHSCOPE_API_KEY")
   OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
   ```
-  【F:evaluation_utils.py†L36-L46】
 
 - **`eval_opensource.py`** – evaluates open‑source Hugging Face models locally using GPU acceleration.
 - **`eval_opensource_rag.py`** – adds a minimal retrieval‑augmented generation (RAG) step before generation.
@@ -36,7 +34,6 @@ Example header from the reference file:
   <p>
       This report visualizes the evaluation results for <b>50</b> models tested on <b>1136</b> questions from the <b>ESGenius_1136q</b> benchmark dataset.
   ```
-  【F:index.html†L27-L35】
 
 - **`figures/`** – images of word clouds and summary plots used in the paper.
 

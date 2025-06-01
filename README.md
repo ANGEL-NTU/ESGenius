@@ -1,6 +1,6 @@
 # ESGenius Benchmark
 
-This repository contains the dataset and evaluation code that accompany the **ESGenius** paper. The benchmark focuses on question answering within the domains of Environmental, Social and Governance (ESG) and sustainability. The full paper is provided as [`ESGenius_arxiv_v1.pdf`](ESGenius_arxiv_v1.pdf).
+This repository contains the dataset and evaluation code released with the **ESGenius** paper. The benchmark focuses on question answering within the domains of Environmental, Social and Governance (ESG) and sustainability. The full paper is provided as [`ESGenius_arxiv_v1.pdf`](ESGenius_arxiv_v1.pdf).
 
 ## Dataset
 
@@ -39,6 +39,19 @@ Example header from the reference file:
   【F:index.html†L27-L35】
 
 - **`figures/`** – images of word clouds and summary plots used in the paper.
+
+
+The following figures summarise the dataset and evaluation results:
+
+![Question word cloud](figures/ESGenius_QA_question_wordcloud.png)
+![Answer option word cloud](figures/ESGenius_QA_option_wordcloud.png)
+![Source text word cloud](figures/ESGenius_Source_Text_wordcloud.png)
+
+![Question distribution](figures/num_questions_distribution_pie.png)
+![Page distribution](figures/pages_distribution_pie.png)
+
+![Main results](figures/main_results.png)
+![Accuracy vs model size](figures/acc_vs_model_size.png)
 
 ## Running Evaluations
 

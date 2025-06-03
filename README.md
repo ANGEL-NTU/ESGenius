@@ -76,5 +76,3 @@ Results are written to the `results/` directory as Excel workbooks containing:
 ## License
 
 This project is licensed under the [Apache 2.0 License](LICENSE).
-
-For full details of the benchmark and experimental setup, please refer to the accompanying paper `ESGenius_arxiv_v1.pdf`.

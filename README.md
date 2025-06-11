@@ -1,4 +1,5 @@
-# ESGenius Benchmark
+
+# ESGenius: Benchmarking LLMs on Environmental, Social, and Governance (ESG) and Sustainability Knowledge
 
 This repository contains the dataset and evaluation code that accompany the **ESGenius** paper. The benchmark focuses on question answering within the domains of Environmental, Social and Governance (ESG) and sustainability. The full paper is provided as https://arxiv.org/pdf/2506.01646
 
